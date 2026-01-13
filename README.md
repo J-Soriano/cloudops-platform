@@ -2,7 +2,7 @@
 
 This repository contains an Azure CloudOps platform that I am building to practice and demonstrate real-world cloud engineering skills.
 
-The focus of this project is not on a single application, but on the **platform layer** that applications run on — networking, security, automation, and operational guardrails.
+The focus of this project is not on a single application, but on the **platform layer** that applications run on > networking, security, automation, and operational guardrails.
 
 ## Project Goals
 
