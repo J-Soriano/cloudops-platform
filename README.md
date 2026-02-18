@@ -20,8 +20,21 @@ Specifically, this platform will include:
 
 ## Status
 
-This project is currently in the early foundation phase.  
-Initial repository structure and planning are complete, and infrastructure setup is in progress.
+This project is actively in development. The Terraform backend and dev environment foundation are complete, and the core networking baseline has been successfully deployed.
+
+**Completed so far:**
+- Repository structure created with environment layout (`infra/envs/dev`)
+- Remote Terraform backend configured in Azure Storage (tfstate container + state file)
+- Dev environment baseline deployed (Resource Group, Virtual Network, Subnet, Network Security Group, and NSG association)
+
+**In progress:**
+- Centralized logging and monitoring (Azure Monitor / Log Analytics)
+- Diagnostics settings for key resources
+
+**Next milestones:**
+- Identity and access guardrails (RBAC, Managed Identity patterns)
+- CI/CD automation with GitHub Actions
+- Cost governance (tag enforcement, tag enforcement, budgets)
 
 ## High-Level Direction
 
