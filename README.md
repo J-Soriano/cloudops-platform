@@ -34,7 +34,7 @@ This project is actively in development. The Terraform backend and dev environme
 **Next milestones:**
 - Identity and access guardrails (RBAC, Managed Identity patterns)
 - CI/CD automation with GitHub Actions
-- Cost governance (tag enforcement, tag enforcement, budgets)
+- Cost governance (tag enforcement, budgets)
 
 ## High-Level Direction
 
