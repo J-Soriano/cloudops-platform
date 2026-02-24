@@ -26,15 +26,20 @@ This project is actively in development. The Terraform backend and dev environme
 - Repository structure created with environment layout (`infra/envs/dev`)
 - Remote Terraform backend configured in Azure Storage (tfstate container + state file)
 - Dev environment baseline deployed (Resource Group, Virtual Network, Subnet, Network Security Group, and NSG association)
+- Centralized logging and monitoring configured (Log Analytics Workspace + NSG Diagnostic Settings)
+- CI/CD automation implemented:
+  - GitHub Actions workflows for `fmt`, `validate`, `plan` (PR)
+  - Apply workflow for `main` with environment gating/approvals (dev)
+  - Secure Azure authentication via OIDC (no stored client secrets)
 
 **In progress:**
-- Centralized logging and monitoring (Azure Monitor / Log Analytics)
-- Diagnostics settings for key resources
+- Identity and access guardrails (RBAC hardening, Managed Identity patterns)
+- Cost governance (tag enforcement, budgets)
 
 **Next milestones:**
-- Identity and access guardrails (RBAC, Managed Identity patterns)
-- CI/CD automation with GitHub Actions
-- Cost governance (tag enforcement, budgets)
+- RBAC least-privilege refinement (scoped roles for deploy identity + state access)
+- Key Vault integration (pipeline/workload secret retrieval patterns)
+- CI/CD enhancements (plan output in PR comments, separate dev/prod environments)
 
 ## High-Level Direction
 
